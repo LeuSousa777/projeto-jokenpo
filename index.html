@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Jokenpô</title>
+  </head>
+
+  <body>
+    <main class="container">
+      <h1>Jokenpô</h1>
+
+      <p class="instruction">Escolha uma opção:</p>
+
+      <section class="choices">
+
+    <button
+        class="choice-button"
+        id="rock" onclick="playHuman('rock')"
+        data-name="Pedra / Stone"
+        aria-label="Escolher pedra"
+    >
+        ✊
+    </button>
+
+    <button
+        class="choice-button"
+        id="paper" onclick="playHuman('paper')"
+        data-name="Papel / Paper"
+        aria-label="Escolher papel"
+    >
+        ✋
+    </button>
+
+    <button
+        class="choice-button"
+        id="scissors" onclick="playHuman('scissors')"
+        data-name="Tesoura / Scissors"
+        aria-label="Escolher tesoura"
+    >
+        ✌️
+    </button>
+
+</section>
+
+      <section class="result">
+        <p>
+          Sua escolha:
+          <span id="player-choice">—</span>
+        </p>
+
+        <p>
+          Escolha da máquina:
+          <span id="machine-choice">—</span>
+        </p>
+
+        <h2 id="result-message">Faça sua jogada!</h2>
+      </section>
+
+      <section class="scoreboard">
+        <h2>Placar</h2>
+
+        <p>
+          Você:
+          <span id="player-score">0</span>
+        </p>
+
+        <p>
+          Máquina:
+          <span id="machine-score">0</span>
+        </p>
+      </section>
+    </main>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>

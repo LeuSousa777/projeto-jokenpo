@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #ffffff;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url("https://picsum.photos/1600/900");
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 35px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: #00e5ff;
+    font-size: 42px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 0 0 15px rgba(0, 229, 255, 0.6);
+}
+
+.instruction {
+    margin-bottom: 25px;
+    color: #cbd5e1;
+    font-size: 17px;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+.choice-button {
+    position: relative;
+    width: 105px;
+    height: 105px;
+    font-size: 50px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #1e293b, #0f172a);
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.4),
+        inset 0 0 10px rgba(255, 255, 255, 0.05);
+    transition: 0.3s;
+}
+
+.choice-button::before {
+    content: attr(data-name);
+    position: absolute;
+    left: 50%;
+    top: -45px;
+    width: max-content;
+    padding: 7px 12px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid #00e5ff;
+    border-radius: 8px;
+    background-color: #0f172a;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-50%) translateY(10px);
+    transition: 0.3s;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.choice-button:hover::before {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+.choice-button:hover {
+    border-color: #00e5ff;
+    transform: translateY(-8px) scale(1.05);
+}
+
+.choice-button:active {
+    transform: translateY(0) scale(0.95);
+}
+
+.result {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgba(15, 23, 42, 0.8);
+}
+
+.result p {
+    margin-bottom: 10px;
+    color: #cbd5e1;
+    font-size: 16px;
+}
+
+.result span {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+#result-message {
+    margin-top: 18px;
+    color: #00ff95;
+    font-size: 22px;
+}
+
+.scoreboard {
+    padding: 18px;
+    border: 1px solid rgba(0, 229, 255, 0.3);
+    border-radius: 15px;
+    background-color: rgba(0, 229, 255, 0.07);
+}
+
+.scoreboard h2 {
+    margin-bottom: 12px;
+    color: #00e5ff;
+    font-size: 22px;
+}
+
+.scoreboard p {
+    display: inline-block;
+    margin: 0 15px;
+    color: #cbd5e1;
+    font-size: 17px;
+}
+
+.scoreboard span {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .choices {
+        gap: 10px;
+    }
+
+    .choice-button {
+        width: 80px;
+        height: 80px;
+        font-size: 38px;
+    }
+
+    .scoreboard p {
+        display: block;
+        margin: 8px 0;
+    }
+}
