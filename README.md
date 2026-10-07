@@ -4,6 +4,12 @@ Este projeto é uma versão interativa do tradicional jogo **Pedra, Papel e Teso
 
 O jogador escolhe uma das três opções e disputa uma rodada contra o computador, que realiza sua escolha automaticamente. O resultado é calculado e apresentado na tela.
 
+
+## 🌐 Projeto publicado
+
+🔗 [Clique aqui para jogar Jokenpô](https://leusousa777.github.io/projeto-jokenpo/)
+
+
 ## 🚀 Funcionalidades
 
 - Escolha entre pedra, papel ou tesoura
