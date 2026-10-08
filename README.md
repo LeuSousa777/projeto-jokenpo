@@ -5,6 +5,11 @@ Este projeto é uma versão interativa do tradicional jogo **Pedra, Papel e Teso
 O jogador escolhe uma das três opções e disputa uma rodada contra o computador, que realiza sua escolha automaticamente. O resultado é calculado e apresentado na tela.
 
 
+## 📸 Demonstração do projeto
+
+<img width="1850" height="937" alt="image" src="https://github.com/user-attachments/assets/ee487147-e994-43f2-ba65-3c0a4d74a6d2" />
+
+
 ## 🌐 Projeto publicado
 
 🔗 [Clique aqui para jogar Jokenpô](https://leusousa777.github.io/projeto-jokenpo/)
@@ -17,6 +22,7 @@ O jogador escolhe uma das três opções e disputa uma rodada contra o computado
 - Verificação do vencedor da rodada
 - Exibição do resultado na tela
 - Interface moderna e interativa
+  
 
 ## 🛠️ Tecnologias utilizadas
 
@@ -25,6 +31,7 @@ O jogador escolhe uma das três opções e disputa uma rodada contra o computado
     <img width="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3">
     <img width="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript">
 </div>
+
 
 ## 📚 Aprendizados
 
@@ -37,6 +44,7 @@ Neste projeto pratiquei:
 - Funções e estruturas condicionais
 - Geração de escolhas aleatórias
 - Comparação das jogadas e atualização da interface
+  
 
 ## 👨‍💻 Autor
 
